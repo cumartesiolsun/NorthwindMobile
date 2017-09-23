@@ -5,6 +5,23 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { ProductPage } from "../pages/product/product";
+import { CartPage } from "../pages/cart/cart";
+import { ActionSheetPage } from "../pages/action-sheet/action-sheet";
+import { AlertPage } from "../pages/alert/alert";
+import { BadgePage } from "../pages/badge/badge";
+import { ButtonPage } from "../pages/button/button";
+import { CheckboxPage } from "../pages/checkbox/checkbox";
+import { DatetimePage } from "../pages/datetime/datetime";
+import { FabsPage } from "../pages/fabs/fabs";
+import { GesturesPage } from "../pages/gestures/gestures";
+import { InputPage } from "../pages/input/input";
+import { ListdemoPage } from "../pages/listdemo/listdemo";
+import { LoadingPage } from "../pages/loading/loading";
+import { SliderPage } from "../pages/slider/slider";
+import { CallnumberPage } from "../pages/callnumber/callnumber";
+import { BatteryPage } from "../pages/battery/battery";
+import { CameraPage } from "../pages/camera/camera";
 
 @Component({
   templateUrl: 'app.html'
@@ -14,7 +31,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -22,7 +39,25 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Products', component: ProductPage },
+      { title: 'Go to Cart', component: CartPage },
+      { title: 'Action Sheet Page', component: ActionSheetPage },
+      { title: 'Alert Page', component: AlertPage },
+      { title: 'Badge Page', component: BadgePage },
+      { title: 'Button Page', component: ButtonPage },
+      { title: 'Checkbox Page', component: CheckboxPage },
+      { title: 'DatetimePage', component: DatetimePage },
+      { title: 'Fabs Page', component: FabsPage },
+      { title: 'GesturesPage', component: GesturesPage },
+      { title: 'InputPage', component: InputPage },
+      { title: 'ListdemoPage', component: ListdemoPage },
+      { title: 'LoadingPage', component: LoadingPage },
+      { title: 'Slide Page', component: SliderPage },
+      { title: 'Callnumber Page', component: CallnumberPage },
+      { title: 'Battery Page', component: BatteryPage },
+      { title: 'CameraPage', component: CameraPage }
+      
     ];
 
   }

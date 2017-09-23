@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>List Demo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      AYDOĞMUŞ
+    </ion-list-header>
+    <button ion-item>İlker</button>
+    <button ion-item>Caner</button>
+    <button ion-item>Taner</button>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>Aydoğmuş</ion-item-divider>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-icon name="leaf" item-start></ion-icon>İlker
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="primary">
+            <ion-icon name="call"></ion-icon>
+            Call
+        </button>
+          <button ion-button color="light">
+            <ion-icon name="mail"></ion-icon>
+            Email
+        </button>
+        </ion-item-options>
+        <!-- <ion-item-options side="left">
+          <button ion-button color="primary">
+              <ion-icon name="mail"></ion-icon>
+              Email
+          </button> 
+        </ion-item-options> -->
+
+      </ion-item-sliding>
+      <ion-item>Caner</ion-item>
+      <ion-item>Taner</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="primary">Lala</ion-item-divider>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/images/chai.jpg" />
+        </ion-avatar>
+        <h3>AA</h3>
+        <h2>JJ</h2>
+      </ion-item>
+      <ion-item>BB</ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/images/chai.jpg" />
+        </ion-thumbnail>
+        CC
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

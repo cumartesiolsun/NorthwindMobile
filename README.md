@@ -24,3 +24,5 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+*** http://eu.lonelyscreen.com/download.html
+*** https://view.ionic.io/

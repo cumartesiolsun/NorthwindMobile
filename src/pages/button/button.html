@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+    <ion-title>Button Demo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Basic Style</h3>
+  <button ion-button (click)="save()">Save</button>
+  <button ion-button small color="secondary" (click)="save()">Save</button>
+  <button ion-button large color="danger" (click)="save()">Save</button>
+  <button ion-button color="dark" (click)="save()">Save</button>
+  <button ion-button color="light" (click)="save()">Save</button>
+  <h3>Outline Style</h3>
+  <button ion-button outline (click)="save()">Save</button>
+  <button ion-button color="secondary" outline (click)="save()">Save</button>
+  <button ion-button color="danger" outline (click)="save()">Save</button>
+  <button ion-button color="dark" outline (click)="save()">Save</button>
+  <button ion-button color="light" outline (click)="save()">Save</button>
+
+  <h3>Clear Style</h3>
+  <button ion-button clear (click)="save()">Save</button>
+  <button ion-button color="secondary" clear (click)="save()">Save</button>
+  <button ion-button color="danger" clear (click)="save()">Save</button>
+  <button ion-button color="dark" clear (click)="save()">Save</button>
+  <button ion-button color="light" clear (click)="save()">Save</button>
+  
+  <h3>Round Style</h3>
+  <button ion-button round (click)="save()">Save</button>
+  <button ion-button color="secondary" round (click)="save()">Save</button>
+  <button ion-button color="danger" round (click)="save()">Save</button>
+  <button ion-button color="dark" round (click)="save()">Save</button>
+  <button ion-button color="light" round (click)="save()">Save</button>
+  
+  <h3>Full Style</h3>
+  <button ion-button full (click)="save()">Save</button>
+  <button ion-button color="secondary" full (click)="save()">Save</button>
+  <button ion-button color="danger" full (click)="save()">Save</button>
+  <button ion-button color="dark" full (click)="save()">Save</button>
+  <button ion-button color="light" full (click)="save()">Save</button>
+
+  <h3>Icon Style</h3>
+  <button ion-button icon-left (click)="save()">
+  <ion-icon name="home"></ion-icon> 
+    Save
+  </button>
+</ion-content>

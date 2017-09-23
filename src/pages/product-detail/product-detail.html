@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Product Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/images/chai.jpg" />
+      <div class="card-title">{{selectedProduct.productName}} </div>
+      <div class="card-subtitle">{{selectedProduct.unitPrice| currency:'USD':'1.2-2'}} </div>
+      <div class="card-add-to-card">
+        <button ion-button (click)="addToCart(selectedProduct)"><ion-icon name="basket"></ion-icon>  </button> 
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

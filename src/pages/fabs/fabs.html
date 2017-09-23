@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+                  <ion-icon name="menu"></ion-icon>
+                </button>
+    <ion-title>Fabs Demo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-fab top right>
+    <button ion-fab mini>      <ion-icon name="add"></ion-icon>    </button>
+    <ion-fab-list>
+      <button (click)="share()" ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab bottom left>
+    <button ion-fab color="secondary">      <ion-icon name="arrow-dropright"></ion-icon>    </button>
+    <ion-fab-list side="right">
+      <button (click)="share()" ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button (click)="share()" ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+ 
+</ion-content>
